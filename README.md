@@ -10,12 +10,15 @@ Steam VR과 Vive Pro hmd를 이용하여 Tilt Brush를 구현
 
 기능
 1. 색깔별 Brush 기능
+2. Brush의 굵기 조절 기능
 2. 그린 그림을 지워주는 Erase기능
 
 
 구현 방법
 1. 책 : 절대강좌! 유니티 VR/AR 을 참고하여 기본 기능을 구현하였다.
-2. Erase기능은 Line Renderer를 선이 아닌 점으로 만들어서 점을 각각의 충돌체로 구현 후 충돌 시 삭제되게 구현하였다.
+2. Brush의 굵기는 Controller의 TouchPad의 위, 아래를 click하여 구현하였다.
+2. Erase기능은 Controller의 Grab을 GetState를 통해 구현하였고
+   Line Renderer를 선이 아닌 점으로 만들어서 점을 각각의 충돌체로 구현 후 충돌 시 삭제되게 구현하였다.
 
 시도했지만 실패한 기능
 1. 네온 느낌의 Brush기능
